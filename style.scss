@@ -1,0 +1,77 @@
+@import 'variables';
+
+
+html, head, body, div, h1, h2 ,h3 , h4, p, a, img, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    
+    #headerBox{
+
+        width: 100vw;
+        height: 25vh;
+        padding-top: 5vh;
+        background-color: lightblue;
+         
+        .headerContent{
+            
+            width: 80%;
+            margin: 0 10%;
+            display: flex;
+            justify-content: space-evenly ;
+
+
+            .profileImage {
+                
+                img {
+                    border-radius: 50%;
+                    width: 15vw;
+                    height: 22vh;
+                }
+
+            }
+            .nameAndPosition {
+
+                h1 {
+                    font-size: 6vw;
+                    color: $headerTextColor;
+                }
+                h2 {
+                    font-size: 2vw;
+                    color: $headerTextColor;
+                }
+            }
+         }
+    }
+    #contentBox {
+        background-color: pink;
+        display: flex;
+
+        #aboutBox {
+
+            background-color: lightgray;
+            height: 100vh;
+            width: 30vw;
+
+            .aboutContent {
+                width: 70%;
+                margin: 0 15%;
+                padding-top: 5vh;
+            }
+        }
+        #experienceBox {
+
+            background-color: lightgreen;
+            height: 100vh;
+            width: 70vw;
+
+            .experienceContent {
+                width: 80%;
+                margin: 0 10%;
+                padding-top: 5vh;
+            }
+        }
+    }
+}

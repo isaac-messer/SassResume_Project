@@ -1,1 +1,54 @@
-/*# sourceMappingURL=style.css.map */
+html, head, body, div, h1, h2, h3, h4, p, a, img, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+#container #headerBox {
+  width: 100vw;
+  height: 25vh;
+  padding-top: 5vh;
+  background-color: lightblue;
+}
+#container #headerBox .headerContent {
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#container #headerBox .headerContent .profileImage img {
+  border-radius: 50%;
+  width: 15vw;
+  height: 22vh;
+}
+#container #headerBox .headerContent .nameAndPosition h1 {
+  font-size: 6vw;
+  color: #fff;
+}
+#container #headerBox .headerContent .nameAndPosition h2 {
+  font-size: 2vw;
+  color: #fff;
+}
+#container #contentBox {
+  background-color: pink;
+  display: flex;
+}
+#container #contentBox #aboutBox {
+  background-color: lightgray;
+  height: 100vh;
+  width: 30vw;
+}
+#container #contentBox #aboutBox .aboutContent {
+  width: 70%;
+  margin: 0 15%;
+  padding-top: 5vh;
+}
+#container #contentBox #experienceBox {
+  background-color: lightgreen;
+  height: 100vh;
+  width: 70vw;
+}
+#container #contentBox #experienceBox .experienceContent {
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 5vh;
+}/*# sourceMappingURL=style.css.map */
