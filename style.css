@@ -5,26 +5,29 @@ html, head, body, div, h1, h2, h3, h4, p, a, img, ul, li {
 
 #container #headerBox {
   width: 100vw;
-  height: 25vh;
-  padding-top: 5vh;
-  background-color: lightblue;
+  padding: 2.5vh 0;
+  background-color: #395B74;
 }
 #container #headerBox .headerContent {
   width: 80%;
   margin: 0 10%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #container #headerBox .headerContent .profileImage img {
   border-radius: 50%;
-  width: 15vw;
-  height: 22vh;
+  border: 3px solid black;
+  width: 20vw;
 }
-#container #headerBox .headerContent .nameAndPosition h1 {
+#container #headerBox .headerContent .nameAndPositionBox {
+  display: flex;
+  align-items: center;
+}
+#container #headerBox .headerContent .nameAndPositionBox .nameAndPosition h1 {
   font-size: 6vw;
   color: #fff;
 }
-#container #headerBox .headerContent .nameAndPosition h2 {
+#container #headerBox .headerContent .nameAndPositionBox .nameAndPosition h2 {
   font-size: 2vw;
   color: #fff;
 }
@@ -33,8 +36,7 @@ html, head, body, div, h1, h2, h3, h4, p, a, img, ul, li {
   display: flex;
 }
 #container #contentBox #aboutBox {
-  background-color: lightgray;
-  height: 100vh;
+  background-color: #fff;
   width: 30vw;
 }
 #container #contentBox #aboutBox .aboutContent {
@@ -42,13 +44,109 @@ html, head, body, div, h1, h2, h3, h4, p, a, img, ul, li {
   margin: 0 15%;
   padding-top: 5vh;
 }
+#container #contentBox #aboutBox .aboutContent .aboutSection {
+  padding-bottom: 5vh;
+}
+#container #contentBox #aboutBox .aboutContent .aboutSection h2 {
+  font-size: 2.75vw;
+  letter-spacing: 4px;
+  color: #818382;
+  border-bottom: 1px solid #818382;
+}
+#container #contentBox #aboutBox .aboutContent .aboutSection p {
+  font-size: 1.75vw;
+  color: #818382;
+  padding-top: 2vh;
+}
+#container #contentBox #aboutBox .aboutContent .contactSection {
+  padding-bottom: 5vh;
+}
+#container #contentBox #aboutBox .aboutContent .contactSection h2 {
+  font-size: 2.75vw;
+  letter-spacing: 4px;
+  color: #818382;
+  border-bottom: 1px solid #818382;
+}
+#container #contentBox #aboutBox .aboutContent .contactSection p {
+  font-size: 2.25vw;
+  font-weight: 100;
+  color: #3B3B3B;
+  padding-top: 2vh;
+}
+#container #contentBox #aboutBox .aboutContent .contactSection a {
+  font-size: 1.75vw;
+  color: #818382;
+  text-decoration: none;
+  display: block;
+  padding-top: 0.5vh;
+}
+#container #contentBox #aboutBox .aboutContent .educationSection {
+  padding-bottom: 5vh;
+}
+#container #contentBox #aboutBox .aboutContent .educationSection h2 {
+  font-size: 2.75vw;
+  letter-spacing: 4px;
+  color: #818382;
+  border-bottom: 1px solid #818382;
+}
+#container #contentBox #aboutBox .aboutContent .educationSection p {
+  font-size: 1.75vw;
+  color: #818382;
+  padding-top: 2vh;
+}
 #container #contentBox #experienceBox {
-  background-color: lightgreen;
-  height: 100vh;
+  background-color: #EFEFEF;
   width: 70vw;
 }
 #container #contentBox #experienceBox .experienceContent {
   width: 80%;
   margin: 0 10%;
   padding-top: 5vh;
+}
+#container #contentBox #experienceBox .experienceContent .skillsSection h2 {
+  font-size: 2.75vw;
+  letter-spacing: 4px;
+  color: #818382;
+  border-bottom: 1px solid #818382;
+  margin-bottom: 3vh;
+}
+#container #contentBox #experienceBox .experienceContent .skillsSection ul {
+  padding-bottom: 5vh;
+}
+#container #contentBox #experienceBox .experienceContent .skillsSection li {
+  color: #3B3B3B;
+}
+#container #contentBox #experienceBox .experienceContent .skillsSection li span {
+  list-style-position: inside;
+  font-size: 1.75vw;
+  line-height: 1.5;
+  color: #818382;
+}
+#container #contentBox #experienceBox .experienceContent .experienceSection h2 {
+  font-size: 2.75vw;
+  letter-spacing: 4px;
+  color: #818382;
+  border-bottom: 1px solid #818382;
+  margin-bottom: 2vh;
+}
+#container #contentBox #experienceBox .experienceContent .experienceSection p {
+  font-size: 1.75vw;
+  word-spacing: 4px;
+  color: #818382;
+}
+#container #contentBox #experienceBox .experienceContent .experienceSection p span {
+  font-weight: bold;
+  color: #3B3B3B;
+}
+#container #contentBox #experienceBox .experienceContent .experienceSection ul {
+  padding-bottom: 3vh;
+}
+#container #contentBox #experienceBox .experienceContent .experienceSection li {
+  color: #3B3B3B;
+}
+#container #contentBox #experienceBox .experienceContent .experienceSection li span {
+  list-style-position: inside;
+  line-height: 1.5;
+  font-size: 1.75vw;
+  color: #818382;
 }/*# sourceMappingURL=style.css.map */

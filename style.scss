@@ -7,40 +7,42 @@ html, head, body, div, h1, h2 ,h3 , h4, p, a, img, ul, li {
 }
 
 #container{
-    
+
     #headerBox{
 
         width: 100vw;
-        height: 25vh;
-        padding-top: 5vh;
-        background-color: lightblue;
+        padding: 2.5vh 0;
+        background-color: $headerBackgroundColor;
          
         .headerContent{
-            
             width: 80%;
             margin: 0 10%;
             display: flex;
-            justify-content: space-evenly ;
+            justify-content: space-between;
 
 
             .profileImage {
-                
+
                 img {
                     border-radius: 50%;
-                    width: 15vw;
-                    height: 22vh;
+                    border: 3px solid black;
+                    width: 20vw;
                 }
 
             }
-            .nameAndPosition {
+            .nameAndPositionBox {
+                display: flex;
+                align-items: center;
 
-                h1 {
-                    font-size: 6vw;
-                    color: $headerTextColor;
-                }
-                h2 {
-                    font-size: 2vw;
-                    color: $headerTextColor;
+                .nameAndPosition {
+                    h1 {
+                        font-size: 6vw;
+                        color: $headerTextColor;
+                    }
+                    h2 {
+                        font-size: 2vw;
+                        color: $headerTextColor;
+                    }
                 }
             }
          }
@@ -51,26 +53,137 @@ html, head, body, div, h1, h2 ,h3 , h4, p, a, img, ul, li {
 
         #aboutBox {
 
-            background-color: lightgray;
-            height: 100vh;
+            background-color: $aboutSectionColor;
             width: 30vw;
 
             .aboutContent {
                 width: 70%;
                 margin: 0 15%;
                 padding-top: 5vh;
+
+                .aboutSection {
+                    padding-bottom: 5vh;
+                    
+                    h2 {
+                        font-size: $contentHeaderTextSize;
+                        letter-spacing: $contentHeaderLetterSpacing;
+                        color: $contentHeaderTextColor;
+                        border-bottom: $ContentHeaderBoarderBottom;
+                    }
+                    p {
+                        font-size: $contentTextSize;
+                        color: $contentTextColor;
+                        padding-top: 2vh;
+                    }
+                }
+
+                .contactSection {
+                    padding-bottom: 5vh;
+
+                    h2 {
+                        font-size: $contentHeaderTextSize;
+                        letter-spacing: $contentHeaderLetterSpacing;
+                        color: $contentHeaderTextColor;
+                        border-bottom: $ContentHeaderBoarderBottom;
+                    }
+                    p {
+                        font-size: 2.25vw;
+                        font-weight: 100;
+                        color: #3B3B3B;
+                        padding-top: 2vh;
+                    }
+                    a {
+                        font-size: $contentTextSize;
+                        color: $contentTextColor;
+                        text-decoration: none;
+                        display: block;
+                        padding-top: .5vh;
+                    }
+                }
+
+                .educationSection {
+                    padding-bottom: 5vh;
+
+                    h2 {
+                        font-size: $contentHeaderTextSize;
+                        letter-spacing: $contentHeaderLetterSpacing;
+                        color: $contentHeaderTextColor;
+                        border-bottom: $ContentHeaderBoarderBottom;
+                    }
+                    p {
+                        font-size: $contentTextSize;
+                        color: $contentTextColor;
+                        padding-top: 2vh;
+                    }
+                }
             }
         }
         #experienceBox {
 
-            background-color: lightgreen;
-            height: 100vh;
+            background-color: $experienceSectionColor;
             width: 70vw;
 
             .experienceContent {
                 width: 80%;
                 margin: 0 10%;
                 padding-top: 5vh;
+
+                .skillsSection {
+
+                    h2 {
+                        font-size: $contentHeaderTextSize;
+                        letter-spacing: $contentHeaderLetterSpacing;
+                        color: $contentHeaderTextColor;
+                        border-bottom: $ContentHeaderBoarderBottom;
+                        margin-bottom: 3vh;
+                    }
+                    ul {
+                        padding-bottom: 5vh;
+                    }
+                    li {
+                        color: $bulletColor;
+
+                        span{
+                            list-style-position: inside;
+                            font-size: $contentTextSize;
+                            line-height: $contentLineHeight;
+                            color: $contentTextColor;
+                        }
+                    }
+                }
+                .experienceSection {
+
+                        h2 {
+                            font-size: $contentHeaderTextSize;
+                            letter-spacing: $contentHeaderLetterSpacing;
+                            color: $contentHeaderTextColor;
+                            border-bottom: $ContentHeaderBoarderBottom;
+                            margin-bottom: 2vh;
+                        }
+                        p {
+                            font-size: $contentTextSize;
+                            word-spacing: $contentWordSpacing;
+                            color: $contentTextColor;
+
+                            span {
+                                font-weight: bold;
+                                color: #3B3B3B;
+                            }
+                        }
+                        ul {
+                            padding-bottom: 3vh;
+                        }
+                        li {
+                            color: $bulletColor;
+
+                            span {
+                                list-style-position: inside;
+                                line-height: $contentLineHeight;
+                                font-size: $contentTextSize;
+                                color: $contentTextColor;
+                            }
+                        }
+                }
             }
         }
     }
