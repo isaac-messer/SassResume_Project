@@ -2,10 +2,15 @@
 
 
 html, head, body, div, h1, h2 ,h3 , h4, p, a, img, ul, li {
-    margin: 0;
-    padding: 0;
+    @include doc-reset;
 }
 
+.header-basic {
+    font-size: $contentHeaderTextSize;
+    color: $contentHeaderTextColor;
+    letter-spacing: $contentHeaderLetterSpacing;
+    border-bottom: $ContentHeaderBoarderBottom;
+}
 #container{
 
     #headerBox{
@@ -65,10 +70,11 @@ html, head, body, div, h1, h2 ,h3 , h4, p, a, img, ul, li {
                     padding-bottom: 5vh;
                     
                     h2 {
-                        font-size: $contentHeaderTextSize;
-                        letter-spacing: $contentHeaderLetterSpacing;
-                        color: $contentHeaderTextColor;
-                        border-bottom: $ContentHeaderBoarderBottom;
+                        @extend .header-basic;
+                        // font-size: $contentHeaderTextSize;
+                        // letter-spacing: $contentHeaderLetterSpacing;
+                        // color: $contentHeaderTextColor;
+                        // border-bottom: $ContentHeaderBoarderBottom;
                     }
                     p {
                         font-size: $contentTextSize;

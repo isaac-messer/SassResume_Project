@@ -3,6 +3,13 @@ html, head, body, div, h1, h2, h3, h4, p, a, img, ul, li {
   padding: 0;
 }
 
+.header-basic, #container #contentBox #aboutBox .aboutContent .aboutSection h2 {
+  font-size: 2.75vw;
+  color: #818382;
+  letter-spacing: 4px;
+  border-bottom: 1px solid #818382;
+}
+
 #container #headerBox {
   width: 100vw;
   padding: 2.5vh 0;
@@ -46,12 +53,6 @@ html, head, body, div, h1, h2, h3, h4, p, a, img, ul, li {
 }
 #container #contentBox #aboutBox .aboutContent .aboutSection {
   padding-bottom: 5vh;
-}
-#container #contentBox #aboutBox .aboutContent .aboutSection h2 {
-  font-size: 2.75vw;
-  letter-spacing: 4px;
-  color: #818382;
-  border-bottom: 1px solid #818382;
 }
 #container #contentBox #aboutBox .aboutContent .aboutSection p {
   font-size: 1.75vw;
